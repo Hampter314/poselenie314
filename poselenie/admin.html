@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Администрация — Байкаловское сельское поселение</title>
+  <script>
+  if (localStorage.getItem('accessibility') === 'on') {
+    document.documentElement.classList.add('accessibility');
+  }
+</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Официальный сайт органа местного самоуправления</span>
+      <button id="accessibility-btn" class="btn-access">Версия для слабовидящих</button>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__emblem" aria-hidden="true">Б</div>
+        <div class="logo__text">
+          <strong>Байкаловское сельское поселение</strong>
+          <span>Байкаловский муниципальный район, Свердловская область</span>
+        </div>
+      </a>
+      <div class="header__contacts">
+        <p>623870, с. Байкалово, ул. Революции, 21</p>
+        <p>+7 (34362) 2-01-87</p>
+        <p>admbaykalovo-sp@yandex.ru</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Главное меню">
+    <div class="container">
+      <ul class="nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="docs.html">Документы</a></li>
+        <li><a href="admin.html" class="active">Администрация</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container main">
+    <h1 class="page-title">Администрация поселения</h1>
+
+    <!-- ГЛАВА -->
+    <section class="card head-card">
+      <div class="head-card__photo" img="C:\Users\user\Desktop\МОЁ!\Не игры!!!\VSC\poselenie\img">Д</div>
+      <div class="head-card__info">
+        <h2>Глава поселения</h2>
+        <p class="head-card__name">Лыжин Дмитрий Владимирович</p>
+        <p class="head-card__desc">Возглавляет администрацию Байкаловского сельского поселения. Осуществляет руководство деятельностью администрации, ведёт личный приём граждан.</p>
+        <p><strong>Личный приём:</strong> каждый вторник с 14:00 до 17:00</p>
+        <p><strong>Телефон:</strong> <a href="tel:+73436220187">+7 (34362) 2-01-87</a></p>
+      </div>
+    </section>
+
+    <!-- СТРУКТУРА -->
+    <section class="card">
+      <h2>Структура администрации</h2>
+      <div class="structure-grid">
+        <div class="structure-item">
+          <h3>Отдел по работе с населением</h3>
+          <p>Работа с обращениями граждан, социальные вопросы, взаимодействие с общественными организациями.</p>
+        </div>
+        <div class="structure-item">
+          <h3>Отдел ЖКХ и благоустройства</h3>
+          <p>Организация водоснабжения, содержание дорог, благоустройство территории, вывоз ТКО.</p>
+        </div>
+        <div class="structure-item">
+          <h3>Бухгалтерия</h3>
+          <p>Ведение бухгалтерского учёта, составление отчётности, исполнение бюджета поселения.</p>
+        </div>
+        <div class="structure-item">
+          <h3>Специалист по земельным вопросам</h3>
+          <p>Учёт земель, работа с кадастровыми документами, аренда муниципального имущества.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- СОТРУДНИКИ -->
+    <section class="card">
+      <h2>Сотрудники администрации</h2>
+      <table class="staff-table">
+        <thead>
+          <tr>
+            <th>ФИО</th>
+            <th>Должность</th>
+            <th>Телефон</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Лыжин Дмитрий Владимирович</td>
+            <td>Глава поселения</td>
+            <td><a href="tel:+73436220187">2-01-87</a></td>
+          </tr>
+          <tr>
+            <td>Иванова Мария Петровна</td>
+            <td>Заместитель главы</td>
+            <td><a href="tel:+73436220188">2-01-88</a></td>
+          </tr>
+          <tr>
+            <td>Петров Сергей Николаевич</td>
+            <td>Начальник отдела ЖКХ</td>
+            <td><a href="tel:+73436220189">2-01-89</a></td>
+          </tr>
+          <tr>
+            <td>Сидорова Елена Александровна</td>
+            <td>Специалист по работе с населением</td>
+            <td><a href="tel:+73436220190">2-01-90</a></td>
+          </tr>
+          <tr>
+            <td>Кузнецов Андрей Викторович</td>
+            <td>Специалист по земельным вопросам</td>
+            <td><a href="tel:+73436220191">2-01-91</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ПРИЁМ -->
+    <section class="card">
+      <h2>График личного приёма граждан</h2>
+      <table class="staff-table">
+        <thead>
+          <tr>
+            <th>Должность</th>
+            <th>День недели</th>
+            <th>Время</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Глава поселения</td><td>Вторник</td><td>14:00–17:00</td></tr>
+          <tr><td>Заместитель главы</td><td>Четверг</td><td>10:00–12:00</td></tr>
+          <tr><td>Специалист по работе с населением</td><td>Понедельник, среда</td><td>9:00–12:00</td></tr>
+          <tr><td>Начальник отдела ЖКХ</td><td>Пятница</td><td>14:00–16:00</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ОБЩЕСТВЕННЫЕ ОРГАНИЗАЦИИ -->
+    <section class="card">
+      <h2>Подведомственные учреждения</h2>
+      <ul class="side-list">
+        <li><a href="https://www.culture.ru/institutes/53781/baikalovskii-selskii-dom-kultury">Байкаловский сельский Дом культуры</a></li>
+        <li><a href="https://yandex.ru/search/?text=Байкаловская+средняя+общеобразовательная+школа&lr=37169&clid=11528186">Байкаловская средняя общеобразовательная школа</a></li>
+        <li><a href="https://companies.rbc.ru/id/1026600877082-munitsipalnoe-predpriyatie-zhilischno-kommunalnogo-hozyajstva-bajkalovskogo-rajona/?utm_referrer=https%3A%2F%2Fyandex.ru%2F">МУП «ЖКХ Байкалово»</a></li>
+        <li><a href="https://www.culture.ru/institutes/51211/baikalovskaya-centralnaya-biblioteka">Байкаловская сельская библиотека</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Байкаловское сельское поселение. Все права защищены.</p>
+      <p>Официальный сайт органа местного самоуправления</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Документы — Байкаловское сельское поселение</title>
+  <script>
+  if (localStorage.getItem('accessibility') === 'on') {
+    document.documentElement.classList.add('accessibility');
+  }
+</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Официальный сайт органа местного самоуправления</span>
+      <button id="accessibility-btn" class="btn-access">Версия для слабовидящих</button>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__emblem" aria-hidden="true">Б</div>
+        <div class="logo__text">
+          <strong>Байкаловское сельское поселение</strong>
+          <span>Байкаловский муниципальный район, Свердловская область</span>
+        </div>
+      </a>
+      <div class="header__contacts">
+        <p>623870, с. Байкалово, ул. Революции, 21</p>
+        <p>+7 (34362) 2-01-87</p>
+        <p>admbaykalovo-sp@yandex.ru</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Главное меню">
+    <div class="container">
+      <ul class="nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="docs.html" class="active">Документы</a></li>
+        <li><a href="admin.html">Администрация</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container main">
+    <h1 class="page-title">Документы</h1>
+
+    <!-- Поиск и фильтр -->
+    <div class="filter-bar">
+      <input type="search" id="doc-search" placeholder="Поиск по названию документа...">
+      <select id="doc-type">
+        <option value="all">Все типы</option>
+        <option value="Постановление">Постановления</option>
+        <option value="Решение">Решения Думы</option>
+        <option value="Устав">Устав</option>
+        <option value="Бюджет">Бюджет</option>
+      </select>
+    </div>
+
+    <section class="card">
+      <table class="docs-table" id="docs-table">
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th>Тип</th>
+            <th>Дата</th>
+            <th>Файл</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-type="Постановление">
+            <td>Постановление № 379-п «О внесении изменений в Порядок предоставления меры поддержки участникам СВО»</td>
+            <td>Постановление</td>
+            <td>15.10.2026</td>
+            <td><a href="docs/379p.docx" class="file-link">DOCX</a></td>
+          </tr>
+          <tr data-type="Постановление">
+            <td>Постановление № 378-п «Об увеличении (индексации) должностных окладов работников администрации»</td>
+            <td>Постановление</td>
+            <td>15.10.2026</td>
+            <td><a href="docs/378p.doc" class="file-link">DOC</a></td>
+          </tr>
+          <tr data-type="Постановление">
+            <td>Постановление № 363-п «Об утверждении основных направлений долговой политики на 2027 год»</td>
+            <td>Постановление</td>
+            <td>09.10.2026</td>
+            <td><a href="docs/363p.docx" class="file-link">DOCX</a></td>
+          </tr>
+          <tr data-type="Постановление">
+            <td>Постановление № 326-п «О создании попечительского Совета»</td>
+            <td>Постановление</td>
+            <td>29.09.2026</td>
+            <td><a href="docs/326p.pdf" class="file-link">PDF</a></td>
+          </tr>
+          <tr data-type="Бюджет">
+            <td>Бюджет для граждан Байкаловского сельского поселения 2025 год</td>
+            <td>Бюджет</td>
+            <td>29.09.2026</td>
+            <td><a href="docs/budget2025.rar" class="file-link">RAR</a></td>
+          </tr>
+          <tr data-type="Решение">
+            <td>Решение Думы № 45 «О бюджете поселения на 2026 год»</td>
+            <td>Решение</td>
+            <td>20.12.2025</td>
+            <td><a href="docs/reshenie45.pdf" class="file-link">PDF</a></td>
+          </tr>
+          <tr data-type="Устав">
+            <td>Устав Байкаловского сельского поселения</td>
+            <td>Устав</td>
+            <td>12.03.2019</td>
+            <td><a href="docs/ustav.pdf" class="file-link">PDF</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="no-docs" class="no-results" hidden>Документы по вашему запросу не найдены.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Байкаловское сельское поселение. Все права защищены.</p>
+      <p>Официальный сайт органа местного самоуправления</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

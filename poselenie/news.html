@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости — Байкаловское сельское поселение</title>
+  <script>
+  if (localStorage.getItem('accessibility') === 'on') {
+    document.documentElement.classList.add('accessibility');
+  }
+</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Официальный сайт органа местного самоуправления</span>
+      <button id="accessibility-btn" class="btn-access">Версия для слабовидящих</button>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__emblem" aria-hidden="true">Б</div>
+        <div class="logo__text">
+          <strong>Байкаловское сельское поселение</strong>
+          <span>Байкаловский муниципальный район, Свердловская область</span>
+        </div>
+      </a>
+      <div class="header__contacts">
+        <p>623870, с. Байкалово, ул. Революции, 21</p>
+        <p>+7 (34362) 2-01-87</p>
+        <p>admbaykalovo-sp@yandex.ru</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Главное меню">
+    <div class="container">
+      <ul class="nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="news.html" class="active">Новости</a></li>
+        <li><a href="docs.html">Документы</a></li>
+        <li><a href="admin.html">Администрация</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container main">
+    <h1 class="page-title">Новости и объявления</h1>
+
+    <!-- Фильтр по году -->
+    <div class="filter-bar">
+      <label for="news-year">Фильтр по году:</label>
+      <select id="news-year">
+        <option value="all">Все годы</option>
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+      </select>
+    </div>
+
+    <div class="news-full">
+
+      <article class="news-item" data-year="2026">
+        <div class="news-item__date">15.10.2026</div>
+        <h2 class="news-item__title">
+          <a href="#">Постановление № 379-п «О внесении изменений в Порядок предоставления меры поддержки участникам СВО»</a>
+        </h2>
+        <p class="news-item__text">Администрация поселения информирует о внесении изменений в действующий порядок предоставления мер социальной поддержки отдельным категориям граждан.</p>
+        <a href="#" class="news-item__more">Читать далее →</a>
+      </article>
+
+      <article class="news-item" data-year="2026">
+        <div class="news-item__date">09.10.2026</div>
+        <h2 class="news-item__title">
+          <a href="#">Постановление № 363-п «Об утверждении основных направлений долговой политики на 2027 год»</a>
+        </h2>
+        <p class="news-item__text">Утверждены основные направления долговой политики Байкаловского сельского поселения на 2027 год и плановый период.</p>
+        <a href="#" class="news-item__more">Читать далее →</a>
+      </article>
+
+      <article class="news-item" data-year="2026">
+        <div class="news-item__date">01.10.2026</div>
+        <h2 class="news-item__title">
+          <a href="#">Информационный вестник № 10 от 01.10.2026</a>
+        </h2>
+        <p class="news-item__text">Опубликован очередной выпуск информационного вестника поселения с перечнем принятых нормативных актов.</p>
+        <a href="#" class="news-item__more">Читать далее →</a>
+      </article>
+
+      <article class="news-item" data-year="2025">
+        <div class="news-item__date">20.12.2025</div>
+        <h2 class="news-item__title">
+          <a href="#">Решение Думы № 45 «О бюджете поселения на 2026 год»</a>
+        </h2>
+        <p class="news-item__text">Дума поселения утвердила бюджет на 2026 год. Основные расходы направлены на благоустройство и ЖКХ.</p>
+        <a href="#" class="news-item__more">Читать далее →</a>
+      </article>
+
+      <article class="news-item" data-year="2024">
+        <div class="news-item__date">12.03.2024</div>
+        <h2 class="news-item__title">
+          <a href="#">Отчёт главы поселения за 2023 год</a>
+        </h2>
+        <p class="news-item__text">Глава поселения отчитался перед жителями о результатах работы администрации за 2023 год.</p>
+        <a href="#" class="news-item__more">Читать далее →</a>
+      </article>
+
+    </div>
+
+    <p id="no-news" class="no-results" hidden>По выбранному году новостей нет.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Байкаловское сельское поселение. Все права защищены.</p>
+      <p>Официальный сайт органа местного самоуправления</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

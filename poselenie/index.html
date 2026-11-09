@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Байкаловское сельское поселение — Официальный сайт</title>
+  <script>
+  if (localStorage.getItem('accessibility') === 'on') {
+    document.documentElement.classList.add('accessibility');
+  }
+</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ (Доступность) -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span></span>
+      <button id="accessibility-btn" class="btn-access" aria-label="Переключить версию для слабовидящих">
+        Версия для слабовидящих
+      </button>
+    </div>
+  </div>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <div class="logo__emblem" aria-hidden="true">Б</div>
+        <div class="logo__text">
+          <strong>Байкаловское сельское поселение</strong>
+          <span>Байкаловский муниципальный район, Свердловская область</span>
+        </div>
+      </div>
+      <div class="header__contacts">
+        <p>623870, с. Байкалово, ул. Революции, 21</p>
+        <p>+7 (34362) 2-01-87</p>
+        <p>admbaykalovo-sp@yandex.ru</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- НАВИГАЦИЯ -->
+  <nav class="nav" aria-label="Главное меню">
+    <div class="container">
+      <ul class="nav__list">
+        <li><a href=""></a></li>
+        <li><a href="home.html" class="active">Главная</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="docs.html">Документы</a></li>
+        <li><a href="admin.html">Администрация</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ОСНОВНОЙ КОНТЕНТ -->
+  <main class="container main">
+
+    <!-- БАННЕР -->
+    <section id="home" class="banner">
+      <h1>Добро пожаловать на официальный сайт</h1>
+      <p>Байкаловское сельское поселение — муниципальное образование в составе Байкаловского района Свердловской области.</p>
+    </section>
+
+    <div class="layout">
+      <!-- ЛЕВАЯ КОЛОНКА -->
+      <div class="content">
+
+        <!-- НОВОСТИ -->
+        <section id="news" class="card">
+          <h2>Новости и объявления</h2>
+          <ul class="news-list">
+            <li>
+              <span class="news-date">15.10.2026</span>
+              <a href="#">Постановление № 379-п «О внесении изменений в Порядок предоставления меры поддержки участникам СВО»</a>
+            </li>
+            <li>
+              <span class="news-date">09.10.2026</span>
+              <a href="#">Постановление № 363-п «Об утверждении основных направлений долговой политики на 2027 год»</a>
+            </li>
+            <li>
+              <span class="news-date">01.10.2026</span>
+              <a href="#">Информационный вестник № 10 от 01.10.2026</a>
+            </li>
+            <li>
+              <span class="news-date">01.10.2026</span>
+              <a href="#">Постановление № 354-п «Об утверждении топливно-энергетического баланса за 2025 год»</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ДОКУМЕНТЫ -->
+        <section id="docs" class="card">
+          <h2>Документы</h2>
+          <table class="docs-table">
+            <thead>
+              <tr>
+                <th>Наименование</th>
+                <th>Дата</th>
+                <th>Файл</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Постановление № 379-п «О внесении изменений в Порядок предоставления меры поддержки...»</td>
+                <td>15.10.2026</td>
+                <td><a href="#" class="file-link">DOCX</a></td>
+              </tr>
+              <tr>
+                <td>Постановление № 378-п «Об увеличении (индексации) должностных окладов...»</td>
+                <td>15.10.2026</td>
+                <td><a href="#" class="file-link">DOC</a></td>
+              </tr>
+              <tr>
+                <td>Постановление № 363-п «Об утверждении основных направлений долговой политики...»</td>
+                <td>09.10.2026</td>
+                <td><a href="#" class="file-link">DOCX</a></td>
+              </tr>
+              <tr>
+                <td>Бюджет для граждан Байкаловского сельского поселения 2025 год</td>
+                <td>29.09.2026</td>
+                <td><a href="#" class="file-link">RAR</a></td>
+              </tr>
+              <tr>
+                <td>Постановление № 326-п «О создании попечительского Совета...»</td>
+                <td>29.09.2026</td>
+                <td><a href="#" class="file-link">PDF</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- АДМИНИСТРАЦИЯ -->
+        <section id="admin" class="card">
+          <h2>Администрация</h2>
+          <p>Администрация Байкаловского сельского поселения образована 23 января 2006 года в соответствии с Федеральным законом «Об общих принципах организации местного самоуправления» от 06.10.2003 г.</p>
+          <p><strong>Глава поселения:</strong> Лыжин Дмитрий Владимирович</p>
+          <p><strong>Личный приём граждан:</strong> каждый вторник с 14:00 до 17:00.</p>
+          <p><strong>Структурные подразделения:</strong> отдел по работе с населением, отдел ЖКХ и благоустройства, бухгалтерия.</p>
+        </section>
+
+      </div>
+
+      <!-- ПРАВАЯ КОЛОНКА (Сайдбар) -->
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Важная информация</h3>
+          <ul class="side-list">
+            <li><a href="#">Памятка по пожарной безопасности</a></li>
+            <li><a href="#">Расписание автобусов</a></li>
+            <li><a href="#">Правила благоустройства</a></li>
+            <li><a href="#">Открытые данные</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Обратная связь</h3>
+          <form id="feedback-form" class="form">
+            <label>Ваше имя
+              <input type="text" name="name" required>
+            </label>
+            <label>Email или телефон
+              <input type="text" name="contact" required>
+            </label>
+            <label>Сообщение
+              <textarea name="message" rows="3" required></textarea>
+            </label>
+            <button type="submit">Отправить обращение</button>
+            <p id="form-status" class="form-status" role="status"></p>
+          </form>
+        </div>
+      </aside>
+    </div>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts" class="card">
+      <h2>Контакты</h2>
+      <p><strong>Адрес:</strong> 623870, Свердловская область, Байкаловский район, с. Байкалово, ул. Революции, 21</p>
+      <p><strong>Телефон:</strong> +7 (34362) 2-01-87</p>
+      <p><strong>Email:</strong> admbaykalovo-sp@yandex.ru</p>
+      <p><strong>Режим работы:</strong> Пн–Пт 8:00–17:00, обед 12:00–13:00</p>
+    </section>
+
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Байкаловское сельское поселение. Все права защищены.</p>
+      <p>Официальный сайт органа местного самоуправления</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
